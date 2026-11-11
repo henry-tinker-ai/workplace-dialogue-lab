@@ -36,3 +36,12 @@ RC8 已通过本地回归，并在 macOS WorkBuddy 用 DeepSeek V4.1 Flash 完�
 工具面向向上管理、项目推进和职场协作。材料请先去标识化，模拟内容仅用于练习。试装适用安装包内许可。
 
 首页组织方式参考[老板 Skill](https://github.com/vogtsw/boss-skills)。
+
+
+## 用一句话安装
+
+在普通 WorkBuddy 新会话粘贴：
+
+> 帮我安装职场对话透镜 Skill：https://github.com/henry-tinker-ai/workplace-dialogue-lab/releases/tag/v0.5.0-rc8
+
+请 WorkBuddy 从该发行页下载配套的安装 ZIP 和 SHA-256，校验后运行对应系统的安装启动文件，最后在「我的专家」确认能打开「职场对话解读与陪练」。若 WorkBuddy 读不到私有附件，请用已登录的浏览器下载，再交给 WorkBuddy 或按上面的步骤手动安装。一句话流程待 Windows 实机验证。
