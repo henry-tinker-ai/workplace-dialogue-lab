@@ -45,3 +45,8 @@ RC8 已通过本地回归，并在 macOS WorkBuddy 用 DeepSeek V4.1 Flash 完�
 > 帮我安装职场对话透镜 Skill：https://github.com/henry-tinker-ai/workplace-dialogue-lab/releases/tag/v0.5.0-rc8
 
 请 WorkBuddy 从该发行页下载配套的安装 ZIP 和 SHA-256，校验后运行对应系统的安装启动文件，最后在「我的专家」确认能打开「职场对话解读与陪练」。若 WorkBuddy 读不到私有附件，请用已登录的浏览器下载，再交给 WorkBuddy 或按上面的步骤手动安装。一句话流程待 Windows 实机验证。
+
+
+## WorkBuddy 模型建议
+
+做即时文字陪练时，推荐优先使用 **Hy4**。在一次同题盲测中，Hy4 的回复更贴近真实聊天口吻，整轮等待时间也更长。
