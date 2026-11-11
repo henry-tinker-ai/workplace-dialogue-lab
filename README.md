@@ -18,3 +18,12 @@
 - [下载 v0.5 SHA-256 校验文件](https://github.com/henry-tinker-ai/workplace-dialogue-lab/releases/download/v0.5.0-rc2/workplace-dialogue-lab-v0.5.0-rc2.zip.sha256)
 
 解压后打开对应平台的安装启动文件。此预发行版适用包内现有许可。
+
+
+## Windows 试装 · v0.5.0 RC8
+
+- [查看 RC8 预发行说明](../../releases/tag/v0.5.0-rc8)
+- [下载 RC8 安装 ZIP](../../releases/download/v0.5.0-rc8/workplace-dialogue-lab-v0.5.0-rc8.zip)
+- [下载 RC8 SHA-256 校验文件](../../releases/download/v0.5.0-rc8/workplace-dialogue-lab-v0.5.0-rc8.zip.sha256)
+
+登录有权限的 GitHub 账号，校验 ZIP 后解压，双击 `install-windows.cmd`。需要 WorkBuddy 和 Python 3.9 或更新版本。
