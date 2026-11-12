@@ -17,9 +17,15 @@
 
 ## 安装
 
-1. 用有仓库访问权限的 GitHub 账号下载 [RC8 安装 ZIP](https://github.com/henry-tinker-ai/workplace-dialogue-lab/releases/download/v0.5.0-rc8/workplace-dialogue-lab-v0.5.0-rc8.zip) 和 [SHA-256 校验文件](https://github.com/henry-tinker-ai/workplace-dialogue-lab/releases/download/v0.5.0-rc8/workplace-dialogue-lab-v0.5.0-rc8.zip.sha256)。
-2. 核对 SHA-256 后解压。Windows 双击 `install-windows.cmd`，macOS 打开 `install-macos.command`。需要 WorkBuddy 和 Python 3.9 或更新版本。
-3. 在 WorkBuddy 专家中心打开「职场对话解读与陪练」，选合成示例或通用模式即可体验。
+1. 从上方 RC8 发行页下载 ZIP 和 SHA-256 校验文件，核对后解压。PowerShell 用 `Get-FileHash -Algorithm SHA256 <zip>` 并比对校验值；Git Bash 用 `sha256sum -c <zip>.sha256`；macOS 用 `shasum -a 256 -c <zip>.sha256`。
+2. 需要 WorkBuddy 和 Python 3.9 或更新版本。Windows 在包目录运行 `python scripts\install_release.py`，也可双击 `install-windows.cmd`（双击入口尚待实机确认）。批处理查找 Python、运行同一个安装器并暂停显示结果。macOS 打开 `install-macos.command`。
+3. 在「我的专家」找「职场对话透镜」（职业标注「职场对话解读与陪练」），选择「合成示例」或「通用」。
+
+### Windows 排错
+
+- 附件下载遇到 TLS 握手失败时，使用浏览器打开发行页下载并校验。
+- RC8 可能找不到非系统盘上的官方组件。
+- 若策略拦截批处理，可直接运行上面的 Python 入口。
 
 ## 试一句
 
@@ -31,7 +37,7 @@
 
 ## 试装状态
 
-RC8 已通过本地回归，并在 macOS WorkBuddy 用 DeepSeek V4.1 Flash 完成五道合成解码题的双模式检查。Windows 实机待测。曾出现一次完整重跑显示完成但正文空白，重试及之后三次独立复查均返回正文。详见[预发行说明](https://github.com/henry-tinker-ai/workplace-dialogue-lab/releases/tag/v0.5.0-rc8)。
+RC8 已通过本地回归，并在 macOS WorkBuddy 用 DeepSeek V4.1 Flash 完成五道合成解码题的双模式检查。Windows 已验证 SHA-256、Python 安装入口、官方校验及 marketplace.json 注册。E 盘 WorkBuddy 的 RC8 实测使用了临时桥接。批处理双击、专家界面人工打开及一句话代装仍待确认。曾出现一次完整重跑显示完成但正文空白，重试及之后三次独立复查均返回正文。详见[预发行说明](https://github.com/henry-tinker-ai/workplace-dialogue-lab/releases/tag/v0.5.0-rc8)。
 
 工具面向向上管理、项目推进和职场协作。材料请先去标识化，模拟内容仅用于练习。试装适用安装包内许可。
 
@@ -42,9 +48,9 @@ RC8 已通过本地回归，并在 macOS WorkBuddy 用 DeepSeek V4.1 Flash 完�
 
 在普通 WorkBuddy 新会话粘贴：
 
-> 帮我安装职场对话透镜 Skill：https://github.com/henry-tinker-ai/workplace-dialogue-lab/releases/tag/v0.5.0-rc8
+> 帮我安装 WorkBuddy 专家「职场对话透镜」：https://github.com/henry-tinker-ai/workplace-dialogue-lab/releases/tag/v0.5.0-rc8
 
-请 WorkBuddy 从该发行页下载配套的安装 ZIP 和 SHA-256，校验后运行对应系统的安装启动文件，最后在「我的专家」确认能打开「职场对话解读与陪练」。若 WorkBuddy 读不到私有附件，请用已登录的浏览器下载，再交给 WorkBuddy 或按上面的步骤手动安装。一句话流程待 Windows 实机验证。
+请 WorkBuddy 下载并核对同版本 ZIP 和 SHA-256，解压后按上述步骤安装。如果附件下载失败，可用浏览器下载再交给 WorkBuddy。安装后在「我的专家」找「职场对话透镜」。
 
 
 ## WorkBuddy 模型建议
