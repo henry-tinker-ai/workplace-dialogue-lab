@@ -4,7 +4,7 @@
 
 「明早确认负责人」是在通知你，还是需要你现在行动？要报延期、提方案或争取资源，怎么开口更清楚？职场对话透镜是一款 WorkBuddy 专家，可以先解读消息，再模拟对话，最后给出可调整的回复草案。
 
-[RC10 试装包](https://github.com/henry-tinker-ai/workplace-dialogue-lab/releases/tag/v0.5.0-rc10) · [历史版本](https://github.com/henry-tinker-ai/workplace-dialogue-lab/releases)
+**「职场对话透镜」已在 WorkBuddy 专家中心上架。** 打开 WorkBuddy，进入「专家·技能·连接器 → 专家」，搜索「职场对话透镜」，打开卡片即可召唤。通过专家中心使用无需从 GitHub 下载或手动安装。
 
 ## 可以做什么
 
@@ -15,18 +15,6 @@
 | 训练画像 | 提交去标识化的协作特征，审阅后发布。使用中的会话固定画像和版本。 |
 | 分享协作建议 | 预览并确认受众后导出审阅过的建议。分享稿可独立阅读，原始材料和证据锚点由提供者保管。 |
 
-## 安装
-
-1. 从上方 RC10 发行页下载 ZIP 和 SHA-256 校验文件，核对后解压。PowerShell 用 `Get-FileHash -Algorithm SHA256 <zip>` 并比对校验值；Git Bash 用 `sha256sum -c <zip>.sha256`；macOS 用 `shasum -a 256 -c <zip>.sha256`。
-2. 需要 WorkBuddy 和 Python 3.9 或更新版本。Windows 在包目录运行 `python scripts\install_release.py`，也可双击 `install-windows.cmd`（双击入口尚待实机确认）。批处理查找 Python、运行同一个安装器并暂停显示结果。macOS 打开 `install-macos.command`。
-3. 在「我的专家」找「职场对话透镜」（职业标注「职场对话解读与陪练」），选择「合成示例」或「通用」。
-
-### Windows 排错
-
-- 附件下载遇到 TLS 握手失败时，使用浏览器打开发行页下载并校验。
-- RC10 会自动检查各固定磁盘上的 WorkBuddy 常见安装路径。若仍提示缺少官方组件，可用 `--official-scripts` 指定官方脚本目录，详见包内 `INSTALL-GITHUB.md`。
-- 若策略拦截批处理，可直接运行上面的 Python 入口。
-
 ## 试一句
 
 > 日常使用合成示例。解码：对方说「会上再定谁来接」。我该怎么回？
@@ -35,23 +23,13 @@
 
 也可以说「陪练：我需要向上汇报延期，请扮演对方追问」。如果想让专家用完整规则重新处理上一轮，输入「用完整提示重跑」。
 
-## 试装状态
+## 历史版本
 
-RC8 已通过本地回归，并在 macOS WorkBuddy 用 DeepSeek V4.1 Flash 完成五道合成解码题的双模式检查。RC10 在 Windows 隔离配置中已通过 SHA-256 校验、自动定位 E 盘 WorkBuddy 官方组件、官方校验及 marketplace.json 注册。Windows 批处理已在隔离配置中验证：`py.exe` 找不到解释器时会回退到 `python`，安装与注册成功。资源管理器双击、在「我的专家」打开卡片及一句话代装仍待确认。曾出现一次完整重跑显示完成但正文空白，重试及之后三次独立复查均返回正文。详见[预发行说明](https://github.com/henry-tinker-ai/workplace-dialogue-lab/releases/tag/v0.5.0-rc8)。
+上架前的试装包、校验文件和发行说明保留在 [GitHub Releases](https://github.com/henry-tinker-ai/workplace-dialogue-lab/releases)，供查阅旧版和排查问题。历史安装包适用各版本随附的许可。
 
-工具面向向上管理、项目推进和职场协作。材料请先去标识化，模拟内容仅用于练习。RC10 适用安装包内的个人非商用许可和 GitHub 公开分发补充许可。
+工具面向向上管理、项目推进和职场协作。材料请先去标识化，模拟内容仅用于练习。
 
 首页组织方式参考[老板 Skill](https://github.com/vogtsw/boss-skills)。
-
-
-## 用一句话安装
-
-在普通 WorkBuddy 新会话粘贴：
-
-> 帮我安装 WorkBuddy 专家「职场对话透镜」：https://github.com/henry-tinker-ai/workplace-dialogue-lab/releases/tag/v0.5.0-rc10
-
-请 WorkBuddy 下载并核对同版本 ZIP 和 SHA-256，解压后按上述步骤安装。如果附件下载失败，可用浏览器下载再交给 WorkBuddy。安装后在「我的专家」找「职场对话透镜」。
-
 
 ## WorkBuddy 模型建议
 
